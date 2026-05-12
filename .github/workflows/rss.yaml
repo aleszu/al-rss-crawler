@@ -22,7 +22,8 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install feedparser pandas
+        run: |
+          pip install feedparser pandas
 
       - name: Run scraper
         run: python scripts/rss_to_csv.py
